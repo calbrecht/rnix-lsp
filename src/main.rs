@@ -85,6 +85,7 @@ fn real_main() -> Result<(), Error> {
             },
         )),
         completion_provider: Some(CompletionOptions {
+            trigger_characters: Some(vec![String::from(".")]),
             ..CompletionOptions::default()
         }),
         definition_provider: Some(OneOf::Left(true)),
